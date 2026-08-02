@@ -1,0 +1,97 @@
+/* * Elimina margen predeterminado del navegador. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* * Contenedor principal del login. */
+.login-container {
+  background-image: url("fondoZvyno.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 0.87);
+  text-align: center;
+}
+
+/* * Tarjeta principal del login. */
+.login-container .contentCard {
+  background-color: #131313;
+  border-radius: 20px;
+  gap: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px;
+  padding: 20px;
+
+  box-shadow: 8px 5px 18px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* * Frase descriptiva. */
+.login-container .frase {
+  color: #909090;
+  font-size: 1.2rem;
+  margin-top: -20px;
+}
+
+/* * Texto de versión. */
+.login-container .version {
+  color: #727272;
+  text-align: start;
+}
+
+/* * Palabra resaltada de la frase. */
+.login-container .resaltado {
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+/* * Logo de Zvyno. */
+.login-container .contentImg img {
+  max-width: 60%;
+  animation: flotar 1.5s ease-in-out infinite alternate;
+}
+
+/* * Título de Zvyno. */
+.login-container .titulo {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: -35px;
+}
+
+/* * Contenedor del botón. */
+.login-container .containerBtn {
+  display: flex;
+  justify-content: center;
+}
+
+/* * Define tamaño y color del icono del botón. */
+.btn-save__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #333333;
+}
+
+/* * Animación flotante del logo. */
+@keyframes flotar {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

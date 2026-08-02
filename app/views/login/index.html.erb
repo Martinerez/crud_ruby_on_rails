@@ -1,0 +1,32 @@
+<div class="login-container">
+
+  <%# * Tarjeta principal del login. %>
+  <div class="contentCard">
+
+    <%# * Versión actual de la aplicación. %>
+    <span class="version">version 1.0</span>
+
+    <%# * Logo animado de Zvyno. %>
+    <div class="contentImg">
+      <%= image_tag "mascotaZvyno.svg", alt: "Zvyno" %>
+    </div>
+
+    <%# * Nombre de la aplicación. %>
+    <h1 class="titulo">Zvyno</h1>
+
+    <%# * Frase principal del sistema. %>
+    <p class="frase">
+      Controla tus gastos, <span class="resaltado">mejora</span> tus finanzas.
+    </p>
+
+    <%# * Contenedor del botón de inicio de sesión. %>
+    <div class="containerBtn">
+      <%= render "shared/btn_save",
+          titulo: "Iniciar con Google",
+          bgcolor: "#DAC1FF",
+          icono: icon("google") %>
+    </div>
+
+  </div>
+
+</div>

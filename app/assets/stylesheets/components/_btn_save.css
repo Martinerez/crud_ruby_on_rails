@@ -1,0 +1,43 @@
+/* * Estilos principales del botón. */
+.btn-save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+  gap: 10px;
+  background-color: transparent;
+}
+
+/* * Contenedor del icono. */
+.btn-save__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* * Estilos visuales del botón. */
+.btn-save__text {
+  background: var(--btn-bg);
+  padding: 0.6rem 1.3rem;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em #000;
+  transition: 0.2s;
+  color: black;
+  cursor: pointer;
+}
+
+/* * Efecto al pasar el cursor. */
+.btn-save__text:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em #000;
+}
+
+/* * Efecto al presionar el botón. */
+.btn-save__text:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em #000;
+}

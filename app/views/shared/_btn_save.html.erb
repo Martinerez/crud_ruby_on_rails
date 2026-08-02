@@ -1,0 +1,15 @@
+<%# * Botón reutilizable que recibe título, color de fondo e icono mediante locals. %>
+<%= button_tag type: "submit", class: "btn-save" do %>
+
+  <%# * Muestra el icono solamente si fue enviado al partial. %>
+  <span class="btn-save__icon">
+    <%= icono if local_assigns[:icono] %>
+  </span>
+
+  <%# * Aplica el color recibido o utiliza #DAC1FF como color predeterminado. %>
+  <span class="btn-save__text" style="--btn-bg: <%= bgcolor || '#DAC1FF' %>;">
+    <%# * Muestra el texto recibido mediante el local 'titulo'. %>
+    <%= titulo %>
+  </span>
+
+<% end %>
