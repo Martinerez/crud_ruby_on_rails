@@ -1,33 +1,44 @@
 :root {
+  /* * Define el ancho principal del sidebar. */
   --sidebar-width: 300px;
   --sidebar-width-initial: 10vw;
 
+  /* * Define los tamaños de espaciado utilizados en la interfaz. */
   --sm-spacing: 8px;
   --md-spacing: 16px;
   --lg-spacing: 24px;
   --xl-spacing: 32px;
   --xxl-spacing: 48px;
 
+  /* * Define el radio de redondeo utilizado en los elementos. */
   --border-radius: 6px;
 
+  /* * Define los colores relacionados con los ingresos. */
   --color-ingresos: #53b257;
   --color-bg-ingresos: #e6ffe7;
 
+  /* * Define los colores relacionados con los gastos. */
   --color-gastos: #fe6156;
   --color-bg-gastos: #fbcbc9;
 
+  /* * Define los colores para mensajes de error y éxito. */
   --color-error: #f54e41;
   --color-exito: #9046ff;
 
+  /* * Define los colores principales de la interfaz. */
   --color-principal: #00f34a;
   --color-secundario: #dac1ff;
 
+  /* * Define el color utilizado para elementos de selección. */
   --color-selector: #bf94ff;
 
+  /* * Define colores reutilizables para estados visuales. */
   --verde: #53b257;
   --rojo: #f54e41;
 
+  /* * Define la sombra utilizada en diferentes elementos de la interfaz. */
   --box-shadow-gray: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 
+  /* * Define el color de fondo con transparencia. */
   --rgba-fondos: rgba(210, 110, 249, 0.1);
 }
