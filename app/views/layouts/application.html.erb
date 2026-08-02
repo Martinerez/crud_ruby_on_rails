@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%# * Título que aparece en la pestaña del navegador. %>
     <title><%= content_for(:title) || "Zvyno" %></title>
+
+    <%# * Configuración básica para adaptar la aplicación a dispositivos móviles. %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Zvyno">
     <meta name="mobile-web-app-capable" content="yes">
+
+    <%# * Protección contra ataques CSRF en formularios y solicitudes. %>
     <%= csrf_meta_tags %>
+
+    <%# * Política de seguridad de contenido (Content Security Policy). %>
     <%= csp_meta_tag %>
 
+    <%# * Permite insertar contenido adicional dentro del <head> desde otras vistas. %>
     <%= yield :head %>
 
-    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
-    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+    <%# * Icono principal de Zvyno para la pestaña del navegador. %>
+    <link rel="icon" href="/zvynoIcon.svg" type="image/svg+xml">
 
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
+    <%# * Icono utilizado cuando la aplicación se agrega a la pantalla de inicio en dispositivos Apple. %>
+    <link rel="apple-touch-icon" href="/zvynoIcon.svg">
 
-    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%# * Carga los estilos CSS de la aplicación. %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+
+    <%# * Carga JavaScript mediante Importmap. %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+    <%# * Aquí se renderiza el contenido de cada vista de Rails. %>
     <%= yield %>
   </body>
 </html>
